@@ -1,0 +1,18 @@
+# Core app
+streamlit>=1.50
+pymupdf>=1.24
+sentence-transformers>=3.0
+chromadb>=1.0
+google-genai>=1.0
+python-dotenv>=1.0
+pandas>=2.0
+pytest>=8.0
+
+# RAGAS stack: these pins matter.
+# ragas 0.3.x/0.4.x fail to import with langchain-community 0.4+ / langchain-core 1.x
+# ("No module named 'langchain_community.chat_models.vertexai'"), so keep this set together.
+ragas==0.3.9
+langchain-core<1
+langchain-community<0.4
+langchain-google-genai<3
+langchain-huggingface>=0.3,<1

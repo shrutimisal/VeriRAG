@@ -1,0 +1,22 @@
+[
+  {
+    "question": "What is the name of the model architecture proposed in the paper?",
+    "reference": "The paper proposes the Transformer, a network architecture based solely on attention mechanisms, dispensing with recurrence and convolutions."
+  },
+  {
+    "question": "How many attention heads does the base Transformer model use?",
+    "reference": "The base Transformer model uses h = 8 parallel attention heads."
+  },
+  {
+    "question": "What is the model dimension d_model used in the base Transformer?",
+    "reference": "The base Transformer uses a model dimension d_model of 512."
+  },
+  {
+    "question": "How many layers are in the encoder stack of the Transformer?",
+    "reference": "The encoder is composed of a stack of N = 6 identical layers."
+  },
+  {
+    "question": "Why is the dot-product attention scaled by the square root of d_k?",
+    "reference": "For large values of d_k the dot products grow large in magnitude, pushing the softmax into regions with extremely small gradients, so they are scaled by 1/sqrt(d_k) to counteract this."
+  }
+]

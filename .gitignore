@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+data/chroma_db/*
+!data/chroma_db/.gitkeep
+data/documents/*
+!data/documents/.gitkeep
+data/evaluation/results/
+.DS_Store
